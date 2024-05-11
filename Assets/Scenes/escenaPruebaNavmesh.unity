@@ -442,6 +442,7 @@ MonoBehaviour:
   cooldownDeAtaque: 2
   tiempoDesdeUltimoAtaque: 2
   scaleX: 0
+  enemyAnimator: {fileID: 1961324545}
 --- !u!1 &751759741
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +537,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 876443412, guid: 51e44b08ce84aaa49a3577010e1e8fec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1031,7 +1032,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2145209026, guid: 941a22947e0113241aabcc1d794ae79d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

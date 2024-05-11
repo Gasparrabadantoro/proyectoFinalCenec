@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public float cooldownDeAtaque = 2;
     public float tiempoDesdeUltimoAtaque = 2;
     public float scaleX;
+    public Animator enemyAnimator;
 
     public void Awake()
     {
@@ -33,7 +34,7 @@ public class Enemy : MonoBehaviour
 
     private void EnemieCheckDirection()
     {
-        print(transform.position-playerTransform.position);
+     
 
         Vector3 distanciaAbsoluta = transform.position - playerTransform.position;
 
@@ -91,12 +92,19 @@ public class Enemy : MonoBehaviour
         vigilando = false;
         persiguiendo = true;
         navMeshReferencia.isStopped = false;
+        enemyAnimator.SetBool("isWalking",true);
+        enemyAnimator.SetBool("isAttacking", false);
     }
 
+    public void StopAttack()
+    {
+        enemyAnimator.SetBool("isAttacking", false);
+    }
     public void StopFollowingPlayer()
     {
         persiguiendo = false;
         navMeshReferencia.isStopped = true;
+        enemyAnimator.SetBool("isWalking", false);
     }
 
     public void AttackDetection()
@@ -108,11 +116,11 @@ public class Enemy : MonoBehaviour
                 //Si no estoy en cooldown
                 StopFollowingPlayer();
                 contandoElTiempo = true;
-                print("Enemigo ataca al jugador a la distancia de:   " + Vector3.Distance(transform.position, playerTransform.position));
-
-
+               
+                enemyAnimator.SetBool("isAttacking",true);
+               
                 Invoke(nameof(StartFollowingPlayer), 2);
-
+                Invoke(nameof(StopAttack),1);
             }
         }
     }
