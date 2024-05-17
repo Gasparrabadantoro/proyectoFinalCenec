@@ -5,17 +5,22 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public float cooldownDeAtaque = 2;
+    public float tiempoDesdeUltimoAtaque = 2;
+    public bool contandoElTiempo;
+    public Transform enemyTransform;
+    public float attackDistance;
     public NavMeshAgent miNavMesh;
     public Animator playerAnimator;
     public float inputX;
     public float inputY;
     public float speed;
     Vector3 ultimaDireccion = Vector3.zero;
+
     // Start is called before the first frame update
     void Start()
     {
-        miNavMesh=GetComponent<NavMeshAgent>();
+        miNavMesh = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -23,14 +28,10 @@ public class PlayerController : MonoBehaviour
     {
         #region movement
         inputX = Input.GetAxisRaw("Horizontal");
-         inputY = Input.GetAxisRaw("Vertical");
+        inputY = Input.GetAxisRaw("Vertical");
 
         miNavMesh.Move(transform.forward * Time.deltaTime * inputY * speed);
         miNavMesh.Move(transform.right * Time.deltaTime * inputX * speed);
-
-      
-
-       
 
         if ((inputX > 0.5f || inputX < -0.05f) || (inputY > 0.05f || inputY < -0.05f))
         {
@@ -52,18 +53,35 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
-
         #region golpeAEnemigo
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
 
-            if (hit.collider!=null)
+            if (hit.collider != null)
             {
                 if (hit.collider.tag == "Enemy")
                 {
-                    print("Le has dado al enemigo");
+                    // Verificar la distancia entre el jugador y el enemigo
+                    float distanciaAlEnemigo = Vector3.Distance(transform.position, enemyTransform.position);
+
+                    if (distanciaAlEnemigo <= attackDistance)
+                    {
+                        if (tiempoDesdeUltimoAtaque == cooldownDeAtaque)
+                        {
+                            contandoElTiempo = true;
+                            // Reproducir animación de ataque
+                            playerAnimator.SetTrigger("attack");
+
+                        }
+
+
+                    }
+                    else
+                    {
+                        print("Estás demasiado lejos para atacar");
+                    }
                 }
                 else
                 {
@@ -72,6 +90,21 @@ public class PlayerController : MonoBehaviour
             }
         }
         #endregion
+        if (contandoElTiempo)
+        {
+            tiempoDesdeUltimoAtaque -= Time.deltaTime;
+            if (tiempoDesdeUltimoAtaque <= 0)
+            {
+                contandoElTiempo = false;
+                tiempoDesdeUltimoAtaque = cooldownDeAtaque;
+            }
+        }
+    }
 
+    //METOOOODOS
+
+    public void ReceiveAttack()
+    {
+        playerAnimator.SetTrigger("receiveDamage");
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
@@ -73,6 +74,19 @@ public class Enemy : MonoBehaviour
                 tiempoDesdeUltimoAtaque = cooldownDeAtaque;
             }
         }
+    }
+
+    //METODOS. HACER REGION 
+    public void SendDamageToPlayer()
+    {
+        playerTransform.gameObject.GetComponent<PlayerController>().ReceiveAttack();
+        print("Damage send to player ");
+    }
+    public bool IsCloseToAttack()
+    {
+        var dist = Vector3.Distance(transform.position, playerTransform.position);
+        Debug.Log("distanceToAttack: " + dist);
+        return dist < attackRange;
     }
 
     public void OpenEyes()
