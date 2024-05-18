@@ -16,7 +16,10 @@ public class PlayerController : MonoBehaviour
     public float inputX;
     public float inputY;
     public float speed;
+    public HealthBarController healthBarControllerJugador;
+
     public float valorInicialDelay;
+    public int contadorVida = 10;
     Vector3 ultimaDireccion = Vector3.zero;
 
     // Start is called before the first frame update
@@ -25,11 +28,17 @@ public class PlayerController : MonoBehaviour
         miNavMesh = GetComponent<NavMeshAgent>();
         // Para que el contador de tiempo se ajusto a tiempo desde ultimo ataque. 
         valorInicialDelay = tiempoDesdeUltimoAtaque;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!askIfImDeath())
+        {
+
+       
         #region movement
 
         if (tiempoDesdeUltimoAtaque==valorInicialDelay)
@@ -118,6 +127,7 @@ public class PlayerController : MonoBehaviour
                 tiempoDesdeUltimoAtaque = cooldownDeAtaque;
             }
         }
+        }
     }
 
     //METOOOODOS
@@ -135,13 +145,28 @@ public class PlayerController : MonoBehaviour
     public void ReceiveDamage()
     {
         playerAnimator.SetTrigger("receiveDamage");
+        contadorVida-=1;
+        checkDeath();
+        healthBarControllerJugador.SetHealth(contadorVida);
     }
-
+    public void checkDeath()
+    {
+        if (contadorVida<=0)
+        {
+            playerAnimator.SetBool("imDead",true);
+            Destroy(healthBarControllerJugador.transform.parent.gameObject);
+        }
+    }
     public void SendDamageToEnemy()
     {
         if (currentEnemy != null)
         {
             currentEnemy.ReceiveDamage();
         }
+    }
+
+    public bool askIfImDeath()
+    {
+        return playerAnimator.GetBool("imDead");
     }
 }

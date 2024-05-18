@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
     public float tiempoDesdeUltimoAtaque = 2;
     public float scaleX;
     public Animator enemyAnimator;
+    public int contadorVida =10;
+    public HealthBarController healthBarController;
 
     public void Awake()
     {
@@ -51,6 +53,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        // Si esl jugador esta vivo... hazme todo esto 
+        if (!playerTransform.GetComponent<PlayerController>().askIfImDeath())
+        {
+
+        
         EnemieCheckDirection();
         if (vigilando) //Estamos detectando  !!!
         {
@@ -73,6 +80,7 @@ public class Enemy : MonoBehaviour
                 contandoElTiempo = false;
                 tiempoDesdeUltimoAtaque = cooldownDeAtaque;
             }
+        }
         }
     }
 
@@ -142,6 +150,24 @@ public class Enemy : MonoBehaviour
     public void ReceiveDamage()
     {
         enemyAnimator.SetTrigger("receiveDamage");
+
+        contadorVida -= 1;
+        checkDeath();
+        healthBarController.SetHealth(contadorVida);
+    }
+
+    public void checkDeath()
+    {
+        if (contadorVida <= 0)
+        {
+            enemyAnimator.SetBool("imDead", true);
+            Destroy(healthBarController.transform.parent.gameObject);
+            // Todo lo que tiene la imagen, se queda huerfano
+            enemyAnimator.transform.parent = null;
+            // te cercioras de que el eenemigo este muerto, y no puedas pinchar ni nada por el estilo 
+            Destroy(this.gameObject);
+
+        }
     }
 
 }
