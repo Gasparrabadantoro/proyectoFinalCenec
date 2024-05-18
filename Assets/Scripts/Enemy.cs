@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
     //METODOS. HACER REGION 
     public void SendDamageToPlayer()
     {
-        playerTransform.gameObject.GetComponent<PlayerController>().ReceiveAttack();
+        playerTransform.gameObject.GetComponent<PlayerController>().ReceiveDamage();
         print("Damage send to player ");
     }
     public bool IsCloseToAttack()
@@ -137,6 +137,11 @@ public class Enemy : MonoBehaviour
                 Invoke(nameof(StopAttack),1);
             }
         }
+    }
+
+    public void ReceiveDamage()
+    {
+        enemyAnimator.SetTrigger("receiveDamage");
     }
 
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aeae12d893d23cb45941d70bfe3cd2f6
+guid: adfc28bcd4c7a5540affbf0af6fcdf96
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attackPlayer_0
+      name: Damage-wep-sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 146
-        width: 138
-        height: 146
+        y: 128
+        width: 70
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5208c611abfc8bc49a16031e386ff379
-      internalID: -1797049027
+      spriteID: c14ca91df25112043b45ea845de28a53
+      internalID: -652888687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackPlayer_1
+      name: Damage-wep-sheet_1
       rect:
         serializedVersion: 2
-        x: 138
-        y: 146
-        width: 138
-        height: 146
+        x: 70
+        y: 128
+        width: 70
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48c790919a58194db1afd80fff6f2a7
-      internalID: 1004361393
+      spriteID: ca300b0498a589146ae0a10b9dc846d0
+      internalID: 1962959346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackPlayer_2
+      name: Damage-wep-sheet_2
       rect:
         serializedVersion: 2
-        x: 276
-        y: 146
-        width: 138
-        height: 146
+        x: 140
+        y: 128
+        width: 70
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d19e7a4d41e419468e1f0e9089f741f
-      internalID: -254816170
+      spriteID: 00e5394fef1aac9428b49738124679d9
+      internalID: -467224011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackPlayer_3
+      name: Damage-wep-sheet_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 138
-        height: 146
+        width: 70
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6800b75987dc0a84fa7dee1683063454
-      internalID: 549881829
+      spriteID: 6215fa9a8e1b6d7448a8354cd2c2e639
+      internalID: -1207468433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attackPlayer_4
+      name: Damage-wep-sheet_4
       rect:
         serializedVersion: 2
-        x: 138
+        x: 70
         y: 0
-        width: 138
-        height: 146
+        width: 70
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257a229f52cdf71459d83abac54a0e82
-      internalID: -1648027774
+      spriteID: bd694a0d4d7aaa545bda2b2afaf3c75a
+      internalID: -1667479267
       vertices: []
       indices: 
       edges: []
@@ -225,11 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attackPlayer_0: -1797049027
-      attackPlayer_1: 1004361393
-      attackPlayer_2: -254816170
-      attackPlayer_3: 549881829
-      attackPlayer_4: -1648027774
+      Damage-wep-sheet_0: -652888687
+      Damage-wep-sheet_1: 1962959346
+      Damage-wep-sheet_2: -467224011
+      Damage-wep-sheet_3: -1207468433
+      Damage-wep-sheet_4: -1667479267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
