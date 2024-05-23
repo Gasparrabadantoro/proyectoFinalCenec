@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimator.SetBool("walking", true);
             ultimaDireccion = new Vector3(inputX, inputY, 0f).normalized;
+                // Buscar normalized 
         }
         else
         {
