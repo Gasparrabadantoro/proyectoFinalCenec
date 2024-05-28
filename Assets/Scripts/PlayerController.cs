@@ -112,6 +112,11 @@ public class PlayerController : MonoBehaviour
                         print("Estás demasiado lejos para atacar");
                     }
                 }
+
+                    if (hit.collider.tag == "Item")
+                    {
+                        hit.collider.GetComponent<Item>().PickUpThisObject();
+                    }
                 else
                 {
                     print("Has fallado");
