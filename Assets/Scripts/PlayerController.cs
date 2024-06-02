@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float inputY;
     public float speed;
     public HealthBarController healthBarControllerJugador;
+    public CursorManager cursorManagerReference;
 
     public float valorInicialDelay;
     public int contadorVida = 10;
@@ -35,18 +36,57 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        Physics.Raycast(ray, out hit);
+
+        if (hit.collider != null && hit.collider.GetComponent<TextBasedInteractionPoint>()) 
+        {
+     
+            if (hit.collider.GetComponent<TextBasedInteractionPoint>())
+            {
+                cursorManagerReference.ChangeCursor(1,true);
+            }
+            else
+            {
+                cursorManagerReference.ChangeCursor(0, false);
+            }     
+        }
+        if (hit.collider == null)
+        {
+            cursorManagerReference.ChangeCursor(0, false);
+        }
+        /*Primero, se verifica si el
+         * personaje no está muerto llamando 
+         * a una función askIfImDeath(). 
+         * Si el personaje está muerto,
+         * el resto del código dentro de Update no se ejecutará.*/
         if (!askIfImDeath())
         {
 
-       
-        #region movement
 
-        if (tiempoDesdeUltimoAtaque==valorInicialDelay)
+            #region movement
+            /*Se verifica si 
+             * tiempoDesdeUltimoAtaque es igual a valorInicialDelay. 
+             * asegura que el personaje no se mueva si está en un   ESTADO DE ATAQUE  o acaba de atacar.*/
+            if (tiempoDesdeUltimoAtaque==valorInicialDelay)
         {
-            inputX = Input.GetAxisRaw("Horizontal");
-            inputY = Input.GetAxisRaw("Vertical");
 
-            miNavMesh.Move(transform.forward * Time.deltaTime * inputY * speed);
+                /*Una vez hecho esto vamos a declarar 2 variables inputX e imput y 
+                 que corresponde a los ejes Horizontal (inputX ) y Vertical(inputY)
+                Input.GetAxisRaw devuelve valores discretos de -1, 0 o 1,
+                lo que indica la dirección de la entrada sin suavizado.
+                Lo mismo pasa con el Vertical. */
+                inputX = Input.GetAxisRaw("Horizontal");
+                inputY = Input.GetAxisRaw("Vertical");
+
+                /*Movimiento de personaje, esto es un componente del propio NavMesh llamado .Move, que hace
+                 que el personaje se mueva y que tiene por componente el transform del propio personaje, un Time.detlTime
+                 que es el  tiempo que ha pasado desde el último frame. 
+                Se utiliza para asegurar que el movimiento sea independiente de la tasa de frames.
+                
+                 speed que es la variable que se encarga de determinar la velocidad de nuestro personaje. */
+                miNavMesh.Move(transform.forward * Time.deltaTime * inputY * speed);
             miNavMesh.Move(transform.right * Time.deltaTime * inputX * speed);
         }
        
@@ -70,19 +110,17 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimator.transform.localScale = new Vector3(1, 1, 1);
         }
-        #endregion
-
-        #region golpeAEnemigo
-        if (Input.GetMouseButtonDown(0))
+            #endregion
+      
+            #region golpeAEnemigo
+            if (Input.GetMouseButtonDown(0))
         {
             // Ray=  dispara un rayo de un sitio a otro. Su origen esta en el punto de disparo del "rayo"
             /* y cuyo destino es aquel lugar donde choca "HIT",la clave es que podemos recibir los objetos 
              tocados por HIT. */
 
             // Esta linea hace un rayo desde la pantalla hasta posicion del ratón. 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            // Esta linea crea un objeto hit que contiene la distancia del rayo y el objeto con el que ha chocado. 
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
+       
 
             if (hit.collider != null)
             {
@@ -117,7 +155,12 @@ public class PlayerController : MonoBehaviour
                     {
                         hit.collider.GetComponent<Item>().PickUpThisObject();
                     }
-                else
+                    if (hit.collider.tag == "TextBasedInteractionPoint")
+                    {
+                        print("Ha tocado en la ventana");
+                        hit.collider.GetComponent<TextBasedInteractionPoint>().ClickOnInteractionPoint();
+                    }
+                    else
                 {
                     print("Has fallado");
                 }
@@ -138,7 +181,7 @@ public class PlayerController : MonoBehaviour
 
     //METOOOODOS
 
-    public void GetCurrentEnemy(Collider2D gameObjectCollider )
+    public void GetCurrentEnemy(Collider gameObjectCollider )
     {
         /*Herramienta para cambiar la variable currentEnemy a el enemigo actual*/
         if (gameObjectCollider.gameObject.tag== "Enemy")

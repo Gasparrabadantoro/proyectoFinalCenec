@@ -32,5 +32,11 @@ public class InventorySlot : MonoBehaviour
     public void FillSlot()
     {
         inventoryPortrait.SetActive(true);
+
+        if (whoIAm == InventorySlotType.Tuberia)
+        {
+            FindObjectOfType<PlayerController>().playerAnimator.SetBool("PipeOn",true);
+        }
+
     }
 }

@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 7251c7addc287484eb1806f7d55637fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: IdleRun_0
+  - first:
+      213: 21300002
+    second: IdleRun_1
+  - first:
+      213: 21300004
+    second: IdleRun_2
+  - first:
+      213: 21300006
+    second: IdleRun_3
+  - first:
+      213: 21300008
+    second: IdleRun_4
+  - first:
+      213: 21300010
+    second: IdleRun_5
+  - first:
+      213: 21300012
+    second: IdleRun_6
+  - first:
+      213: 21300014
+    second: IdleRun_7
+  - first:
+      213: 21300016
+    second: IdleRun_8
+  - first:
+      213: 21300018
+    second: IdleRun_9
+  - first:
+      213: 21300020
+    second: IdleRun_10
+  - first:
+      213: 21300022
+    second: IdleRun_11
+  - first:
+      213: 21300024
+    second: IdleRun_12
+  - first:
+      213: 21300026
+    second: IdleRun_13
+  - first:
+      213: 21300028
+    second: IdleRun_14
+  - first:
+      213: 21300030
+    second: IdleRun_15
+  - first:
+      213: 21300032
+    second: IdleRun_16
+  - first:
+      213: 21300034
+    second: IdleRun_17
+  - first:
+      213: 21300036
+    second: IdleRun_18
+  - first:
+      213: 21300038
+    second: IdleRun_19
+  - first:
+      213: 21300040
+    second: IdleRun_20
+  - first:
+      213: 21300042
+    second: IdleRun_21
+  - first:
+      213: 21300044
+    second: IdleRun_22
+  - first:
+      213: 21300046
+    second: IdleRun_23
+  - first:
+      213: 21300048
+    second: IdleRun_24
+  - first:
+      213: 21300050
+    second: IdleRun_25
+  - first:
+      213: 21300052
+    second: RunTuberia1_0
+  - first:
+      213: 21300054
+    second: RunTuberia1_1
+  - first:
+      213: 21300056
+    second: RunTuberia1_2
+  - first:
+      213: 21300058
+    second: RunTuberia1_3
+  - first:
+      213: 21300060
+    second: RunTuberia1_4
+  - first:
+      213: 21300062
+    second: RunTuberia1_5
+  - first:
+      213: 21300064
+    second: RunTuberia1_6
+  - first:
+      213: 21300066
+    second: RunTuberia1_7
+  - first:
+      213: 21300068
+    second: RunTuberia1_8
+  - first:
+      213: 21300070
+    second: RunTuberia1_9
+  - first:
+      213: 21300072
+    second: RunTuberia1_10
+  - first:
+      213: 21300074
+    second: RunTuberia1_11
+  - first:
+      213: 21300076
+    second: RunTuberia1_12
+  - first:
+      213: 21300078
+    second: RunTuberia1_13
+  - first:
+      213: 21300080
+    second: IdleRunTuberia1_14
+  - first:
+      213: 21300082
+    second: IdleRunTuberia1_15
+  - first:
+      213: 21300084
+    second: IdleRunTuberia1_16
+  - first:
+      213: 21300086
+    second: IdleRunTuberia1_17
+  - first:
+      213: 21300088
+    second: IdleRunTuberia1_18
+  - first:
+      213: 21300090
+    second: IdleRunTuberia1_19
+  - first:
+      213: 21300092
+    second: IdleRunTuberia1_20
+  - first:
+      213: 21300094
+    second: IdleRunTuberia1_21
+  - first:
+      213: 21300096
+    second: IdleRunTuberia1_22
+  - first:
+      213: 21300098
+    second: IdleRunTuberia1_23
+  - first:
+      213: 21300100
+    second: IdleRunTuberia1_24
+  - first:
+      213: 21300102
+    second: IdleRunTuberia1_25
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleRunTuberia1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0e2efc884f7a54b82e79a87897de7e
+      internalID: 610144099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 264
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835808bd65c0ca24eab6282cf754330f
+      internalID: -689783097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 264
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea836f797fafbe48924adcb3261d235
+      internalID: -1771201201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 264
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44391fb993bc79c498f9035e5bcd97e8
+      internalID: 1159535829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdf10938fa671e49a9d235e8f39bbf0
+      internalID: 1814869634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 132
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea9e73bf1ef10458ed88a074bd71a6
+      internalID: -54725364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 132
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2793d9d0f40fbd8499dd21f096c1d208
+      internalID: -1623341935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 132
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba4517ec0b5faf44986f5493ef1bbac
+      internalID: 1871787182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2025f20e8bbabfe42ad85ee538a32249
+      internalID: 1807246651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710d058a5fb645947bfa5d2ab60f5380
+      internalID: -338268842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRunTuberia1_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c788f7670000b9d43a15f0355dc2c477
+      internalID: -1512461274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8432ff3743b577049975d43a472e22a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      IdleRunTuberia1_0: 610144099
+      IdleRunTuberia1_1: -689783097
+      IdleRunTuberia1_10: -1512461274
+      IdleRunTuberia1_2: -1771201201
+      IdleRunTuberia1_3: 1159535829
+      IdleRunTuberia1_4: 1814869634
+      IdleRunTuberia1_5: -54725364
+      IdleRunTuberia1_6: -1623341935
+      IdleRunTuberia1_7: 1871787182
+      IdleRunTuberia1_8: 1807246651
+      IdleRunTuberia1_9: -338268842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
