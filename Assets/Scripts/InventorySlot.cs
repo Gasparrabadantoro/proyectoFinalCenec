@@ -39,4 +39,22 @@ public class InventorySlot : MonoBehaviour
         }
 
     }
+
+    public void ClickContainedItem()
+    {
+        if (whoIAm == InventorySlotType.Rombo)
+        {
+            // Cambia el cursor al rombo
+            FindObjectOfType<CursorManager>().ChangeCursor(2,true);
+
+            // Apagame el inventario 
+
+            bool isActive = !FindObjectOfType<InventoryController>().inventoryUI.activeSelf;
+            FindObjectOfType<InventoryController>().inventoryUI.SetActive(isActive);
+
+            // Ponme a True la variable de romboEquipado. 
+
+            FindObjectOfType<PlayerController>().romboEquipado = true;
+        }
+    }
 }

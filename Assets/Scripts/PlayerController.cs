@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public HealthBarController healthBarControllerJugador;
     public CursorManager cursorManagerReference;
+    public bool romboEquipado = false;
 
     public float valorInicialDelay;
     public int contadorVida = 10;
@@ -40,19 +41,19 @@ public class PlayerController : MonoBehaviour
         RaycastHit hit;
         Physics.Raycast(ray, out hit);
 
-        if (hit.collider != null && hit.collider.GetComponent<TextBasedInteractionPoint>()) 
+        if (hit.collider != null && hit.collider.GetComponent<TextBasedInteractionPoint>() ) 
         {
      
-            if (hit.collider.GetComponent<TextBasedInteractionPoint>())
+            if (hit.collider.GetComponent<TextBasedInteractionPoint>() && !romboEquipado)
             {
                 cursorManagerReference.ChangeCursor(1,true);
             }
-            else
+            else if(!romboEquipado)
             {
                 cursorManagerReference.ChangeCursor(0, false);
             }     
         }
-        if (hit.collider == null)
+        if (hit.collider == null && !romboEquipado)
         {
             cursorManagerReference.ChangeCursor(0, false);
         }

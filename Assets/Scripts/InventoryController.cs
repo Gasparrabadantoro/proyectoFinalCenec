@@ -18,11 +18,11 @@ public class InventoryController : MonoBehaviour
             // Pausa o reanuda el juego
             if (isActive)
             {
-                Time.timeScale = 0f; // Pausa el juego
+                //Time.timeScale = 0f; // Pausa el juego
             }
             else
             {
-                Time.timeScale = 1f; // Reanuda el juego
+                //Time.timeScale = 1f; // Reanuda el juego
             }
         }
     }
@@ -39,5 +39,7 @@ public class InventoryController : MonoBehaviour
 
     }
 
-    
+  
+
+
 }

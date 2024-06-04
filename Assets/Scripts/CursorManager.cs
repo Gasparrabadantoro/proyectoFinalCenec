@@ -7,6 +7,7 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Texture2D [] cursorTextures;
     //0 Cursor Normal NO VA CENTRADO
     //1 cursor ojo SI VA CENTRADO
+    //2 Si es el rombo,SI VA CENTRADO 
 
     private Vector2 cursorHotsPot;
 
