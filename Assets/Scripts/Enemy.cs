@@ -151,26 +151,37 @@ public class Enemy : MonoBehaviour
 
     public void ReceiveDamage(bool headDamage)
     {
-        enemyAnimator.SetTrigger("receiveDamage");
-
+        
+        if (headDamage)
+        {
+            //enemyAnimator.SetTrigger("receiveDamageBody");
+            enemyAnimator.SetTrigger("receiveDamage");
+        }
+        else
+        {
+            // enemyAnimator.SetTrigger("receiveDamage");
+            enemyAnimator.SetTrigger("receiveDamageBody");
+        }
         contadorVida -= 1;
-        checkDeath(headDamage);
+        
         healthBarController.SetHealth(contadorVida);
+        checkDeath(headDamage);
     }
 
     public void checkDeath(bool headDamage)
     {
         if (contadorVida <= 0)
         {
+            enemyAnimator.SetBool("imDead", true);
             if (headDamage)
             {
-                /*ANIMACION MUERTE CABEZA*/
+                enemyAnimator.SetBool("deathByHead", true);
             }
             else
             {
-                /*ANIMACION MUERTE Cuerpo*/
+                enemyAnimator.SetBool("deathByHead", false);
             }
-            enemyAnimator.SetBool("imDead", true);
+            
             Destroy(healthBarController.transform.parent.gameObject);
             // Todo lo que tiene la imagen, se queda huerfano
             enemyAnimator.transform.parent = null;

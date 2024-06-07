@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,18 +108,964 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: deathHead_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 451
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2edb7b83e55f94fab7b97ab75b04ad
+      internalID: 968757042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746e0579a41779b4f830869134eef3ae
+      internalID: -2111655255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 353
+        width: 69
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c036ea660ef9fa344988b547d03549ac
+      internalID: -482717707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 436
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46289f3e664f43742971a11c938b332c
+      internalID: -1865887167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 527
+        width: 61
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df81ddd64619f240aa1143f97522601
+      internalID: -1660538196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 468
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2fd8d5e8405e64995e404b25d369a5
+      internalID: -278934098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 429
+        width: 12
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc56ca258db29e74bb9b2ec546ff8c10
+      internalID: 1532760359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 457
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d1c7d865dc1ea4b9ca7455aca2609f
+      internalID: 1455521761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 470
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee10ea84e7ee3204ab8b55a5de2e171f
+      internalID: -1609314649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 442
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f13ffeff9305b489f3cd0bc19ba593
+      internalID: -1788568245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 433
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa57b5fd7b957646a12b8772fad7061
+      internalID: -1879697526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 527
+        width: 61
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c06713bda6eb47bfa92def94e7223
+      internalID: 124653451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 497
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eafd614c7a9ce0458dd4e37e9d906b2
+      internalID: -1326233219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 447
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a46e332b4275254680761815a0299dc
+      internalID: -932603558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_14
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 426
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb55520b8cb5f94285fc1311846e4f9
+      internalID: -1919555036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_15
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 474
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd29cc5817216440af973842b85033e
+      internalID: -1866701102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 445
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e7ef9baf89c1140a57e0e240650292
+      internalID: -873151281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 436
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236038414553a5c4fbe8fa4ce0a87d63
+      internalID: -135780309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_18
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 511
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528f5fd5ddd118a41b24f67be3d36a17
+      internalID: -253834585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 527
+        width: 61
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ada14d637d12444aa6fe15d0727d626
+      internalID: 1211780233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_20
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 455
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57b9dddff369e34fad3bdeb7c47480b
+      internalID: -1967257404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 446
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7437443e15b2446478c8a195aaf074e9
+      internalID: 1443139755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_22
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 441
+        width: 100
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f895a0346a65a2e40910a0560e3fa994
+      internalID: -973837539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 446
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9247b826757113741b1daf204be8521e
+      internalID: -37045157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_24
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 425
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a4184a9b856942b4d594337376411
+      internalID: 2108692977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_25
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 428
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9f4ac20bc830242b9baeb15d2fd89f
+      internalID: 786834032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_26
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 428
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87637dccf5542e4183f64c89a2ada50
+      internalID: -817702588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_27
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 423
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b12a6885d4f5d448e67171aef828fe
+      internalID: 935144635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_28
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 360
+        width: 79
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6196449ac519a1940808127f2f2fafe8
+      internalID: -1727683360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_29
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 413
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4765c50eeb94c459fec531c24656a1
+      internalID: -1430355900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_30
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 412
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97182dbc71aabfc489fde35bde68ae54
+      internalID: 727611783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_31
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 361
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0052ff6d51d13e2429c8e3a6d155a189
+      internalID: -1691471430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_32
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 399
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e00a8994a9ab9044a4856f7301a6612
+      internalID: -1670682681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_33
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 389
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65c5a9ac0959d44b90983d6c694818
+      internalID: 2039688697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_34
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 379
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c19cffef3069646b1504f1f55ae92d
+      internalID: -1743467674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_35
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 357
+        width: 89
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a3d521657b9944c9ee3a89523f97f9
+      internalID: -2027602346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_36
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 187
+        width: 96
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afbc382ba0a6a949a6f9eda335d61ec
+      internalID: -1147583120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_37
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 224
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc56d23978bb98f4882ae9a774af5b82
+      internalID: 435965515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_38
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 186
+        width: 81
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8234339a8ed25e342a3647dba8a85776
+      internalID: -1453472176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_39
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 185
+        width: 86
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a145c69ea7645744c8adf7e6ac501af9
+      internalID: 1109736318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_40
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 184
+        width: 77
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2195e0ffe5a3594e8c31077c312f6b7
+      internalID: -1531940397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_41
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 11
+        width: 77
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fcb01f43b378842b7049d39b75c58e
+      internalID: 1753116974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathHead_42
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 11
+        width: 77
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b39eaff017f614583bccd2898fed3c
+      internalID: 761607095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      deathHead_0: 968757042
+      deathHead_1: -2111655255
+      deathHead_10: -1879697526
+      deathHead_11: 124653451
+      deathHead_12: -1326233219
+      deathHead_13: -932603558
+      deathHead_14: -1919555036
+      deathHead_15: -1866701102
+      deathHead_16: -873151281
+      deathHead_17: -135780309
+      deathHead_18: -253834585
+      deathHead_19: 1211780233
+      deathHead_2: -482717707
+      deathHead_20: -1967257404
+      deathHead_21: 1443139755
+      deathHead_22: -973837539
+      deathHead_23: -37045157
+      deathHead_24: 2108692977
+      deathHead_25: 786834032
+      deathHead_26: -817702588
+      deathHead_27: 935144635
+      deathHead_28: -1727683360
+      deathHead_29: -1430355900
+      deathHead_3: -1865887167
+      deathHead_30: 727611783
+      deathHead_31: -1691471430
+      deathHead_32: -1670682681
+      deathHead_33: 2039688697
+      deathHead_34: -1743467674
+      deathHead_35: -2027602346
+      deathHead_36: -1147583120
+      deathHead_37: 435965515
+      deathHead_38: -1453472176
+      deathHead_39: 1109736318
+      deathHead_4: -1660538196
+      deathHead_40: -1531940397
+      deathHead_41: 1753116974
+      deathHead_42: 761607095
+      deathHead_5: -278934098
+      deathHead_6: 1532760359
+      deathHead_7: 1455521761
+      deathHead_8: -1609314649
+      deathHead_9: -1788568245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
