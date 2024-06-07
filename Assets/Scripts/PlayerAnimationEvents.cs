@@ -20,10 +20,15 @@ public class PlayerAnimationEvents : MonoBehaviour
         
     }
 
-    public void Attack()
+    public void AttackHead()
     {
 
-        playerReference.SendDamageToEnemy();
+        playerReference.SendDamageToEnemy(true);
        
+    }
+
+    public void AttackBody()
+    {
+        playerReference.SendDamageToEnemy(false);
     }
 }

@@ -125,13 +125,18 @@ public class PlayerController : MonoBehaviour
 
             if (hit.collider != null)
             {
+                    print("HIT COLIDER ES DISTINTO DE NULL  "+hit.collider.gameObject.name);
                 if (hit.collider.tag == "Enemy")
-                {
-                    //aqui con el GetCurrentEnemy nos cercioramos de que estamos 
-                    /*asignando la variable currentEnemy con el enemigo al que nos estamos enfrentando, pa que? 
-                     Cuando vayas a hacer el metodo atack, no tienes a quien mandarselo, no sabes*/
-                    GetCurrentEnemy(hit.collider);
-                    // Verificar la distancia entre el jugador y el enemigo
+                    {   
+                        print("HE ENTRADO EN ENEMY COLLIDER ");
+                        //aqui con el GetCurrentEnemy nos cercioramos de que estamos 
+                        /*asignando la variable currentEnemy con el enemigo al que nos estamos enfrentando, pa que? 
+                         Cuando vayas a hacer el metodo atack, no tienes a quien mandarselo, no sabes*/
+                        currentEnemy =hit.collider.transform.parent.GetComponent<Enemy>();
+                        enemyTransform = currentEnemy.transform;
+                        // Verificar la distancia entre el jugador y el enemigo
+                   
+                       
                     float distanciaAlEnemigo = Vector3.Distance(transform.position, enemyTransform.position);
 
                     if (distanciaAlEnemigo <= attackDistance)
@@ -139,9 +144,22 @@ public class PlayerController : MonoBehaviour
                         if (tiempoDesdeUltimoAtaque == cooldownDeAtaque)
                         {
                             contandoElTiempo = true;
-                            // Reproducir animación de ataque
-                            playerAnimator.SetTrigger("attack");
+                                print("ESTAMOSAQUI");
+                                // Reproducir animación de ataque
+                                if (hit.collider == currentEnemy.colliderBody)
+                                {
+                                    print("hasta aqui llega ataque body");
+                                    playerAnimator.SetTrigger("attackBody");
+                                }
+                                else if (hit.collider == currentEnemy.colliderHead)
+                                {
+                                    print("hasta aqui llega ataque cabeza");
+                                    playerAnimator.SetTrigger("attackHead");
+                                    
+                                }
+                            // AQUI- HAY QUE CAMBIAR PARA QUE HAYA DOS SET TRIGGER
 
+                             // 1 ATAQUE CABEZA 2 ATAQUE CUERPO. 
                         }
 
 
@@ -207,11 +225,11 @@ public class PlayerController : MonoBehaviour
             Destroy(healthBarControllerJugador.transform.parent.gameObject);
         }
     }
-    public void SendDamageToEnemy()
+    public void SendDamageToEnemy(bool headDamage)
     {
         if (currentEnemy != null)
         {
-            currentEnemy.ReceiveDamage();
+            currentEnemy.ReceiveDamage(headDamage);
         }
     }
 

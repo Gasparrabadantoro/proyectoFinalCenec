@@ -21,10 +21,12 @@ public class Enemy : MonoBehaviour
     public Animator enemyAnimator;
     public int contadorVida =10;
     public HealthBarController healthBarController;
+    public BoxCollider colliderHead;
+    public BoxCollider colliderBody;
 
     public void Awake()
     {
-
+        playerTransform = FindObjectOfType<PlayerController>().transform;
         navMeshReferencia = GetComponent<NavMeshAgent>();
         navMeshReferencia.speed = speed;
 
@@ -147,19 +149,27 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void ReceiveDamage()
+    public void ReceiveDamage(bool headDamage)
     {
         enemyAnimator.SetTrigger("receiveDamage");
 
         contadorVida -= 1;
-        checkDeath();
+        checkDeath(headDamage);
         healthBarController.SetHealth(contadorVida);
     }
 
-    public void checkDeath()
+    public void checkDeath(bool headDamage)
     {
         if (contadorVida <= 0)
         {
+            if (headDamage)
+            {
+                /*ANIMACION MUERTE CABEZA*/
+            }
+            else
+            {
+                /*ANIMACION MUERTE Cuerpo*/
+            }
             enemyAnimator.SetBool("imDead", true);
             Destroy(healthBarController.transform.parent.gameObject);
             // Todo lo que tiene la imagen, se queda huerfano

@@ -23,7 +23,8 @@ public class CursorManager : MonoBehaviour
         }
 
         Cursor.SetCursor(cursorTextures[cursorId], cursorHotsPot,CursorMode.Auto);
-    
+
+       
     }
 
     private void Start()
