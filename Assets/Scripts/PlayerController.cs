@@ -179,6 +179,10 @@ public class PlayerController : MonoBehaviour
                         print("Ha tocado en la ventana");
                         hit.collider.GetComponent<TextBasedInteractionPoint>().ClickOnInteractionPoint();
                     }
+                    if (hit.collider.tag == "PuzzleTrigger")
+                    {
+                        hit.collider.GetComponent<PuzzleInteractionPoint>().CallPuzzle();
+                    }
                     else
                 {
                     print("Has fallado");

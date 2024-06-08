@@ -6,6 +6,7 @@ using UnityEngine;
 public class InventorySlot : MonoBehaviour
 {
     public GameObject inventoryPortrait;
+    public TextBasedInteractionsManager textBasedInteractionRef;
     public enum InventorySlotType
     {
         CartaManga,
@@ -20,7 +21,7 @@ public class InventorySlot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        textBasedInteractionRef = FindAnyObjectByType<TextBasedInteractionsManager>();
     }
 
     // Update is called once per frame
@@ -55,6 +56,14 @@ public class InventorySlot : MonoBehaviour
             // Ponme a True la variable de romboEquipado. 
 
             FindObjectOfType<PlayerController>().romboEquipado = true;
+        }
+        else if (whoIAm == InventorySlotType.CartaManga)
+        {
+            textBasedInteractionRef.FillTextContainer("La carta dice: kdfjhgslkdfjgh");
+        }
+        else if (whoIAm == InventorySlotType.Tuberia)
+        {
+            textBasedInteractionRef.FillTextContainer("Si hago click sobre un enemigo podré golpearle con esto");
         }
     }
 }
